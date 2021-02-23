@@ -14,8 +14,8 @@ def duplicates(arr):
             final.append(char)
             
     
-    return len(final)
+    return final
         
 
-d = duplicates([1,2,3,1,5,8,8,5,78,55,78,78])
+d = duplicates(['abc','def','raj','zack','abc','raj'])
 print(d)
