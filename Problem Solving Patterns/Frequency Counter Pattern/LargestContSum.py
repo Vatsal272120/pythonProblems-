@@ -12,16 +12,22 @@ The algorithm is, we start summing up the numbers and store in a current sum var
 
 def sum(arr):
     
-    
-    current_sum = max_sum = arr[0]
+    currentSum = maxSum = arr[0]
     
     for num in arr[1:]:
+         # set current sum as the higher of the current sum and the number in the iteration
+         # i.e if currentSum = 3 and num = 2 => current sum = 3
+        currentSum = max(currentSum + num, num)
         
-        current_sum = max(current_sum + num, num)
-        max_sum = max(max_sum, current_sum)
         
-    return max_sum   
+        # maxSum will be maximum btn the current sum and maxSum
+        maxSum = max(currentSum, maxSum)
         
+    return maxSum
+        
+    
+    
+    
 
 
 
