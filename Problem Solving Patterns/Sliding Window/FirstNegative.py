@@ -1,5 +1,3 @@
-from typing import NoReturn
-
 
 def firstNegative(arr, k):
     negative = []
@@ -9,6 +7,9 @@ def firstNegative(arr, k):
             negative.append(num)
             
     return negative
+
+
+    
        
         
 
